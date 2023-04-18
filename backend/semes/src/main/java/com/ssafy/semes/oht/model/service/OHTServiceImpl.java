@@ -1,13 +1,3 @@
-package com.ssafy.semes.oht.model.service;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import com.ssafy.semes.oht.model.repository.OHTRepository;
-
-@Service
-public class OHTServiceImpl implements OHTService {
-	@Autowired
-	OHTRepository ohtRepository;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:27aaa06acaece2e14f1e7ff9078bf12bc58d2eb683f18a6584c126c8e1489826
+size 1620
