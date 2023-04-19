@@ -1,11 +1,3 @@
-import React from 'react';
-
-function DashboardPage() {
-  return (
-    <div>
-      <h1>대시보드 페이지</h1>
-    </div>
-  );
-}
-
-export default DashboardPage;
+version https://git-lfs.github.com/spec/v1
+oid sha256:1d41dc431911cd9ab39f0759309bfaa47e49f4225aaed99865f694db43336529
+size 828
