@@ -1,9 +1,3 @@
-package com.ssafy.semes.ohtcheck.model.repository;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-import com.ssafy.semes.ohtcheck.model.OHTCheckEntity;
-@Repository
-public interface OHTCheckRepository extends JpaRepository<OHTCheckEntity,Long> {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:17e1e9460b61385abf34e7b0133375bef571e7d7110ac49ed50b975fd86c600c
+size 314

@@ -1,15 +1,3 @@
-package com.ssafy.semes.image.model;
-
-import java.util.List;
-
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter
-@Setter
-@Builder
-public class ImageListResponseDto {
-	private int status;
-	private List<ImageResponseDto> images;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d1be030a17d9e5a7587a0c1d53ae422a0d761f9b9470580954db1c488f6b14b2
+size 254

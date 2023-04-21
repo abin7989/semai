@@ -1,12 +1,3 @@
-package com.ssafy.semes.ohtcheck.controller;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.ssafy.semes.ohtcheck.model.service.OHTCheckService;
-
-@RestController
-public class OHTCheckController {
-	@Autowired
-	OHTCheckService ohtCheckService;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:267183c34b4d25aeb40a0f8c8a3247372deb451fcc39c63c582bd6080676ab41
+size 335
