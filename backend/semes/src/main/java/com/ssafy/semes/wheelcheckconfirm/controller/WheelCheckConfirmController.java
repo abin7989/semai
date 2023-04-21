@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bd44590f1c989bd713c9b8ad3c35e7267d75764e82ae39f32fcc441ea1a819a8
-size 471
+package com.ssafy.semes.wheelcheckconfirm.controller;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class WheelCheckConfirmController {
+	@GetMapping("/api/historychecks")
+	public ResponseEntity<?> findAllHistoryCheck(){
+
+		return 	new ResponseEntity<Void>(HttpStatus.OK);
+	}
+
+}

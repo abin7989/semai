@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ce382ecaaade41cef7657b0ef56c6199711c7cc59a7728e4bc66b00fcd279574
-size 344
+package com.ssafy.semes.image.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class ImageFileDto {
+	private String uuid;
+	private String fileName;
+	private String contentType;
+}
