@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cb6e258fdec5f972e8463c7540a63b6dc537e8fe3f8bdc7c2012329766111f2e
-size 327
+package com.ssafy.semes.oht.model.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.ssafy.semes.oht.model.OHTEntity;
+@Repository
+public interface OHTRepository extends JpaRepository<OHTEntity,Long> {
+	OHTEntity findByOhtSN(String ohtSN);
+}

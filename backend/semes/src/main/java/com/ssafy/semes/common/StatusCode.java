@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:daeaa3c94986fd415161ad9e873223ed3d26ff7b503265fca485f794471b2c27
-size 506
+package com.ssafy.semes.common;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+
+@Getter
+@RequiredArgsConstructor(access = AccessLevel.PRIVATE)
+public enum StatusCode {
+    SUCCESS(200),CREATED(201), BAD_REQUEST(400), UNAUTHORIZED(401), FORBIDDEN(403), NOT_FOUND(404), METHOD_NOT_ALLOWED(405),
+    NOT_ACCEPTABLE(406), CONFLICT(409), UNSUPPORTED_MEDIA_TYPE(415), INTERNAL_SERVER(500), BAD_GATEWAY(502),
+    SERVICE_UNAVAILABLE(503);
+
+    private final int status;
+}
