@@ -1,9 +1,3 @@
-package com.ssafy.semes.user.model.repository;
-
-
-import com.ssafy.semes.user.model.UserEntity;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface UserRepository extends JpaRepository<UserEntity,Long> {
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4aaf4c7cca6c7d05f2837ca195619e4db76cd668327b5a8254663bd5024cdc65
+size 302
