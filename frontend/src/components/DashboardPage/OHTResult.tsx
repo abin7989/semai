@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:27ca1644edefbd1a250a22acbfd7257c55fec4fa35a21eb2ee284da82dc7baad
-size 538
+import Title from "../Title";
+import styled from "styled-components";
+
+const OHTResultContainer = styled.section`
+  display: flex;
+  flex-direction: column;
+  grid-row: 1/3;
+  grid-column: 1/2;
+  padding: 10px;
+`;
+
+const OHTResultSec = styled.div`
+  background-color: var(--section-color);
+  flex: 1;
+`;
+
+function OHTResult() {
+  return (
+    <OHTResultContainer>
+      <Title title="OHT 휠 검사 결과" />
+      <OHTResultSec>안녕</OHTResultSec>
+    </OHTResultContainer>
+  );
+}
+
+export default OHTResult;
