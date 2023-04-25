@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d13fb78c82aabe0a15f2b801783d98578a6bf2ae42665543dfae7da73cdd5b11
-size 135
+package com.ssafy.semes.user.model.service;
+
+import com.ssafy.semes.user.model.UserEntity;
+import com.ssafy.semes.user.model.UserRequestDto;
+import org.springframework.stereotype.Service;
+
+@Service
+public interface UserSerivce {
+    UserEntity findUser(UserRequestDto userRequestDto) throws Exception ;
+}
