@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3f9f2e8ababdb1dbab8a26bbb7aecee191f4bfa5f20db13d9801f07e84b3ed03
-size 86
+path: ../datasets/wheel
+train: train/images
+val: valid/images
+
+names: 
+  0: bolt hole

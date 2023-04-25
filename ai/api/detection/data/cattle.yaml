@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dc2e881c9ad013219a71880f75e4e07704e04e09d377b1ef0e62a092f314e48e
-size 261
+path: ../datasets/cattle
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 2
+names: 
+  0: none
+  1: Cattle
+
+roboflow:
+  workspace: project
+  project: catle
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/project/catle/dataset/3
