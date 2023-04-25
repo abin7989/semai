@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:34516b865a3a3b2a1fbbcc2e7c83ebb2fee016e97b659d5734aacf2cd1dbe759
-size 313
+package com.ssafy.semes.exception;
+
+public class UnAuthorizedException extends RuntimeException {
+    private static final long serialVersionUID = -2238030302650813813L;
+
+    public UnAuthorizedException() {
+        super("계정 권한이 유효하지 않습니다.\n다시 로그인을 해주세요.");
+    }
+}
