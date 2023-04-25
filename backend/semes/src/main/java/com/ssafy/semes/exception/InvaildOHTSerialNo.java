@@ -1,10 +1,3 @@
-package com.ssafy.semes.exception;
-
-public class InvaildOHTSerialNo extends RuntimeException{
-	private static final long serialVersionUID = 2145683086550861540L;
-
-	public InvaildOHTSerialNo() {
-		super("유효하지 않은 OHT 시리얼 번호 입니다.\n다시 시도해주세요.");
-	}
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5b003e9797f3b66a58b216ebfed711b62f24d29f2912155c580aa836964e62ca
+size 292
