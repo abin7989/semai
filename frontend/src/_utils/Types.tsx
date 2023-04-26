@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:24156d347eb4fe5766f6575a65c4ececba36594db0039c1b19de1525b37de853
-size 406
+export type TitleProps = {
+  title: string;
+};
+
+export type ButtonProps = {
+  width?: string;
+  height?: string;
+}
+
+export type LabelProps = {
+  theme: string;
+}
+
+export type ReportTableProps = {
+  handleModalOpen: (arg :DetailInfoType) => void;
+}
+
+export type DetailInfoType = {
+  ohtSn?: string
+}
+
+export type DetailModalProps = {
+  detailInfo: DetailInfoType;
+  setIsModalOpen: (arg: boolean) => void;
+}
