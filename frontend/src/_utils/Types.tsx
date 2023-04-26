@@ -1,25 +1,3 @@
-export type TitleProps = {
-  title: string;
-};
-
-export type ButtonProps = {
-  width?: string;
-  height?: string;
-}
-
-export type LabelProps = {
-  theme: string;
-}
-
-export type ReportTableProps = {
-  handleModalOpen: (arg :DetailInfoType) => void;
-}
-
-export type DetailInfoType = {
-  ohtSn?: string
-}
-
-export type DetailModalProps = {
-  detailInfo: DetailInfoType;
-  setIsModalOpen: (arg: boolean) => void;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:01c6e1d47bee3b3e23016205dbdb1cdec4fe216ab30cc0b8a5ed84507b9221bb
+size 775

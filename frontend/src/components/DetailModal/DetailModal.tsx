@@ -1,17 +1,3 @@
-import React from "react";
-import { DetailContainer, ModalBackground } from "./ModalComponents";
-import { DetailModalProps } from "../../_utils/Types";
-
-function DetailModal({ detailInfo, setIsModalOpen }: DetailModalProps) {
-  return (
-    <div>
-      <ModalBackground></ModalBackground>
-      <DetailContainer>
-        <div onClick={e => setIsModalOpen(false)}>X</div>
-        <div>{detailInfo.ohtSn}</div>
-      </DetailContainer>
-    </div>
-  );
-}
-
-export default DetailModal;
+version https://git-lfs.github.com/spec/v1
+oid sha256:eae6360ac3608890e5cbe5a6d4e1702db7c65f6e2af5ae239331cabd7646ae77
+size 1121
