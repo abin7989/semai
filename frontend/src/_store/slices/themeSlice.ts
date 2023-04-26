@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eae0ce75122b67c7d4b4bed4ed1a9c7f3f8edacd6377670662f0d74659d781b8
-size 396
+import { createSlice } from '@reduxjs/toolkit'
+
+export const ThemeSlice = createSlice({
+  name: 'theme',
+  initialState: {
+    theme: "dark"
+  },
+  reducers: {
+    toggleTheme: (state, action) => {
+      state.theme = action.payload
+    }
+  },
+})
+
+// Action creators are generated for each case reducer function
+export const { toggleTheme } = ThemeSlice.actions
+
+export default ThemeSlice.reducer
