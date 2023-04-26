@@ -1,8 +1,3 @@
-package com.ssafy.semes.transition.model.service;
-
-import org.springframework.stereotype.Service;
-
-@Service
-public class TransitionServiceImpl implements  TransitionService {
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4729734c1c224084d5fe54cd015da4c54ebc14a810e75044df292a0cb9654aa5
+size 1469
