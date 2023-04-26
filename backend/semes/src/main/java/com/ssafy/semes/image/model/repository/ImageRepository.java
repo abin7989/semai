@@ -1,11 +1,3 @@
-package com.ssafy.semes.image.model.repository;
-
-import java.util.List;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.ssafy.semes.image.model.ImageEntity;
-
-public interface ImageRepository extends JpaRepository<ImageEntity,Long> {
-	List<ImageEntity>  findByFileDir(String fileDir);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fe99d0ca7b41600320a29004bdc59cec425d5a5d69d60c8baac611232130a26c
+size 700
