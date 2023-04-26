@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:52fe84c76665dba3b236d2a57e9308308ef8c72ee0a7b84f1586e236d2a5c4df
-size 506
+import { TitleProps } from "../_utils/Types";
+import { ReactComponent as TitleRect } from "../assets/TitleRect.svg";
+import styled from "styled-components";
+
+const TitleH1 = styled.h1`
+  color: var(--emphasize-color);
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+`;
+
+function Title({ title }: TitleProps) {
+  return (
+    <TitleH1>
+      <TitleRect fill="var(--emphasize-color)" style={{ marginRight: "5px" }} /> {title}
+    </TitleH1>
+  );
+}
+
+export default Title;
