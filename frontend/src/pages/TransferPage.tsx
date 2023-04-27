@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f4c50382ae47f9ece785ce05cab9927d85ccdb5174e35b9fd8f08800bcb42e4f
-size 2050
+import React from 'react';
+import styled from "styled-components";
+import Title from "../components/Title";
+import TransferTab from "../components/TransferPage/TransferTab";
+
+const TransferSection = styled.section`
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+`
+
+function TransferPage() {
+  return (
+    <TransferSection>
+      <Title title="전이학습" />
+      <TransferTab></TransferTab>
+    </TransferSection>
+  );
+}
+
+export default TransferPage;
