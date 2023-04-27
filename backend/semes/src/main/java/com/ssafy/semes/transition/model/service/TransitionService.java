@@ -1,17 +1,3 @@
-package com.ssafy.semes.transition.model.service;
-
-
-import java.io.IOException;
-import java.util.List;
-
-import org.springframework.stereotype.Service;
-
-import com.ssafy.semes.image.model.ImageListResponseDto;
-import com.ssafy.semes.transition.model.TransitionUpdateRequestDto;
-
-@Service
-public interface TransitionService {
-	List<ImageListResponseDto> findAll();
-
-	void moveFiles(TransitionUpdateRequestDto requestDto) throws IOException;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9cfb2b77b3efa4efc17420e9a856521c2dd0e8ff1ac01c10896e08175824c29d
+size 587
