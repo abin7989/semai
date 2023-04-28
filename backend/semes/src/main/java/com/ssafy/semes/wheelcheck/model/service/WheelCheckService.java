@@ -1,15 +1,3 @@
-package com.ssafy.semes.wheelcheck.model.service;
-
-import java.io.IOException;
-
-import org.springframework.web.multipart.MultipartFile;
-
-import com.ssafy.semes.ohtcheck.model.OHTCheckEntity;
-import com.ssafy.semes.util.FileNameUtil;
-import com.ssafy.semes.wheelcheck.model.WheelCheckEntity;
-
-public interface WheelCheckService {
-	WheelCheckEntity checkWheel(MultipartFile file, FileNameUtil fileNameUtil,int wheelPosition, OHTCheckEntity ohtCheck) throws
-		IOException,
-		InterruptedException;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4a0defdc6751b7c4a4ccfdac71010fc47c9b7f025b404f8e74f14e73a09225ac
+size 552
