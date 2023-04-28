@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0f680f7c0b64b63794aa3bd28e176f03b47d49bea016b0316ed3c79c4815198f
-size 462
+package com.ssafy.semes.report.model.service;
+
+import com.ssafy.semes.report.model.QuestionDto;
+import com.ssafy.semes.report.model.ReportListResponseDto;
+import org.springframework.data.domain.Pageable;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
+
+public interface ReportService {
+    Map<String, Object> findReport(QuestionDto dto) throws Exception;
+    ReportListResponseDto findReportDetail(long wheelChcekId) throws Exception;
+}
