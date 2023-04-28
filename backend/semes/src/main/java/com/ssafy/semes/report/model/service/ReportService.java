@@ -1,12 +1,3 @@
-package com.ssafy.semes.report.model.service;
-
-import com.ssafy.semes.report.model.QuestionDto;
-import com.ssafy.semes.report.model.ReportListResponseDto;
-import org.springframework.data.domain.Pageable;
-
-import java.util.List;
-
-public interface ReportService {
-    List<ReportListResponseDto> findReport(QuestionDto dto) throws Exception;
-    ReportListResponseDto findReportDetail(long wheelChcekId) throws Exception;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0f680f7c0b64b63794aa3bd28e176f03b47d49bea016b0316ed3c79c4815198f
+size 462
