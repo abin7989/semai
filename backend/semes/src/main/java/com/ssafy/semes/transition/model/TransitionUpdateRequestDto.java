@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2433eebe40f3826973ddc0ce4f9702f0f732cf8becefdb74e81d9e1d58b16c41
-size 392
+package com.ssafy.semes.transition.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@Builder
+@ToString
+@AllArgsConstructor
+@NoArgsConstructor
+public class TransitionUpdateRequestDto {
+
+	private Long[] fileIds;
+	private int preType;
+	private int nextType;
+
+}
