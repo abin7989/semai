@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0367e35ce3018239b5323904b1341790d808267aea2ead5b84a63cda8b84f235
-size 333
+package com.ssafy.semes.dashboard.model;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@Builder
+public class ProcessStatusDto {
+	private boolean isProceeding;
+	private boolean[] isWheelsProceeding;
+	private String ohtSn;
+
+	public void wheelComplete(int i){
+		isWheelsProceeding[i] = true;
+	}
+}
