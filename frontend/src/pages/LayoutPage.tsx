@@ -1,25 +1,3 @@
-import NavBar from "../components/NavBar";
-import Main from "../components/MainComponent";
-import styled from "styled-components";
-import { Outlet } from "react-router-dom";
-import React from "react";
-
-const Layout = styled.div`
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-`;
-
-function LayoutPage() {
-  return (
-    <Layout>
-      <NavBar />
-      <Main>
-        <Outlet />
-      </Main>
-      {/*<footer>A301</footer>*/}
-    </Layout>
-  );
-}
-
-export default LayoutPage;
+version https://git-lfs.github.com/spec/v1
+oid sha256:9145468ecde37cb6ff7bfdda59e2e6ecf08a3333e35fa2ae3a6e047df71c8dd7
+size 477
