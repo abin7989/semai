@@ -1,22 +1,3 @@
-import { createSlice } from '@reduxjs/toolkit'
-
-export const UserSlice = createSlice({
-  name: 'user',
-  initialState: {
-    userName: "",
-    token: ""
-  },
-  reducers: {
-    setUserName: (state, action) => {
-      state.userName = action.payload;
-    },
-    setToken: (state, action) => {
-      state.token = action.payload;
-    }
-  },
-})
-
-// Action creators are generated for each case reducer function
-export const { setUserName, setToken } = UserSlice.actions
-
-export default UserSlice.reducer
+version https://git-lfs.github.com/spec/v1
+oid sha256:22685e6662989ff3e04bbbec209d3687f72a700e1243adc5a01f3de8a22eecc7
+size 635
