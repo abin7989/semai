@@ -1,21 +1,3 @@
-import Axios from "./Axios";
-
-async function BoltImageListsLoader () {
-  let BoltImageLists = []
-  try {
-    let response = await Axios.get('transition');
-    BoltImageLists = response.data;
-    console.log(BoltImageLists);
-  }
-  catch (err) {
-    console.log(err)
-  }
-  return BoltImageLists;
-  // await Axios.get('transition')
-  //   .then(response => console.log(response.data))
-  //   .catch(error => console.log(error))
-  //
-  // return null
-}
-
-export { BoltImageListsLoader }
+version https://git-lfs.github.com/spec/v1
+oid sha256:fecd76aff99778ce9f03dde0d6ba486b899ce850f5f30c2c5bac77b36fd18bc0
+size 734
