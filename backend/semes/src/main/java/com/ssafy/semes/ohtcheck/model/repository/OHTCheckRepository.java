@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9ee9566d18fc7acb3ffac684cc50eb01ac17bfa04f539b7b8ecb8e71dc476a8a
-size 528
+package com.ssafy.semes.ohtcheck.model.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
+
+import com.ssafy.semes.ohtcheck.model.OHTCheckEntity;
+
+import java.util.List;
+
+@Repository
+public interface OHTCheckRepository extends JpaRepository<OHTCheckEntity,Long> {
+
+    @Query("select o from OHTCheckEntity o join fetch o.oht")
+    List<OHTCheckEntity> findAllJoinFetch();
+}
