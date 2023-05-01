@@ -1,24 +1,3 @@
-package com.ssafy.semes.report.model;
-
-import lombok.*;
-
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-
-@Getter
-@Setter
-@Builder
-@ToString
-@AllArgsConstructor
-public class QuestionDto {
-    private String ohtSn;
-    private String startDate;
-    private String endDate;
-    private String time;
-    private String wheelPosition;
-    private LocalDateTime startTime;
-    private LocalDateTime endTime;
-    private int page;
-    private int errorFlag;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a430b51b5a7aae8bafdd462600dca24a51634de632a9a92c8bb233df775d20d8
+size 554
