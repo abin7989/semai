@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:70cbb1662c86dfb8ffc6acdb298b1eba5bc9f756f6d0af499e779436204124fb
-size 299
+package com.ssafy.semes.exception;
+
+public class JPAException extends RuntimeException {
+    private static final long serialVersionUID = -2238030302650813813L;
+
+    public JPAException() {
+        super("DB에서 조회되지 않습니다. 파라미터를 정확하게 입력하세요.");
+    }
+}
+
