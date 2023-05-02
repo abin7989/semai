@@ -1,19 +1,3 @@
-package com.ssafy.semes.oht.model;
-
-import java.util.List;
-
-import com.ssafy.semes.ohtcheck.model.OHTCheckEntity;
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
-
-@Builder
-@AllArgsConstructor
-@Setter
-@Getter
-public class OHTResponseDto {
-	public String serialNumber;
-	public List<OHTCheckEntity> ohtChecks;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b58d335b4756d62afec59e89cb1c2e585435ed0afe554ccbd8f651294c9a60ee
+size 374
