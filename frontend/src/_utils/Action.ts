@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:543d758b7ba187485ce78a6ec91be1b4f7d81910a60d539fb2ea5ce5568b7099
-size 432
+export async function ReportListsAction ({request}: {request: Request}) {
+  let formData = await request.formData();
+  console.log(formData);
+  const url = new URL(request.url);
+  console.log(url);
+  if (!url.searchParams.has("errorFlag")) {
+    url.searchParams.set('errorFlag', "0");
+  }
+
+  console.log(url);
+  return url;
+}
+
+export async function TransferTestAction () {
+  console.log("action 실행됩니다.");
+  return null;
+}
