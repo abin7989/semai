@@ -1,12 +1,3 @@
-package com.ssafy.semes.oht.model.repository;
-
-import java.util.Optional;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-import com.ssafy.semes.oht.model.OHTEntity;
-@Repository
-public interface OHTRepository extends JpaRepository<OHTEntity,Long> {
-	Optional<OHTEntity> findByOhtSN(String ohtSn);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c49067478817b766b639b8bcd154603611b5e39961002da05dd0a337dc359197
+size 365
