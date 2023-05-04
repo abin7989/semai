@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:438572b9862acdabbb050198c97c6c96d42845a2687d1d459d5dfe4a2d98dae7
-size 291
+import styled from "styled-components";
+
+export const BlurBackground = styled.div<{ scrollY: string }>`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: ${props => props.scrollY + "px"};
+  left: 0;
+  background: rgba(0, 5, 10, 0.37);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+`;
