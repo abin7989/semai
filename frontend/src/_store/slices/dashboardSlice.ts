@@ -1,18 +1,3 @@
-import { createSlice } from "@reduxjs/toolkit";
-
-export const dashboardSlice = createSlice({
-  name: "dashboard",
-  initialState: {
-    checkId: 0,
-  },
-  reducers: {
-    setCheckId: (state, action) => {
-      state.checkId = action.payload;
-    },
-  },
-});
-
-// Action creators are generated for each case reducer function
-export const { setCheckId } = dashboardSlice.actions;
-
-export default dashboardSlice.reducer;
+version https://git-lfs.github.com/spec/v1
+oid sha256:2be7c832fe39d8f239c3c356089fea6d4ef49b840b1fb14e95b20222143ed929
+size 527
