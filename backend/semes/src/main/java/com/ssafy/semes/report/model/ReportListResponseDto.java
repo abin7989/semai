@@ -1,18 +1,3 @@
-package com.ssafy.semes.report.model;
-
-import lombok.*;
-
-import java.time.LocalDateTime;
-
-@Getter
-@Setter
-@Builder
-@ToString
-@AllArgsConstructor
-public class ReportListResponseDto {
-    private String ohtSn;
-    private int boltGoodCount;
-    private LocalDateTime wheelCheckDate;
-    private long wheelChcekId;
-    private String wheelPosition;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e64cd14f78a1f9788a3b3d97d25f32f176e56d44e88cf1beff0efa90a13b65ef
+size 348
