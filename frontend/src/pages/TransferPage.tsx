@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dd886def645a8b3b7be306496a725ce5b9763eda67cf9d538c406557800558c8
-size 1470
+import React from 'react';
+import styled from "styled-components";
+
+import TransferTab from "../components/TransferPage/TransferTab";
+
+const TransferSection = styled.section`
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+`
+
+function TransferPage() {
+  return (
+    <TransferSection>
+      {/*{ isModalOpen && <ImageModal detailInfo={detailInfo} handleModalClose={handleModalClose} /> }*/}
+
+      <TransferTab />
+    </TransferSection>
+  );
+}
+
+export default TransferPage;
