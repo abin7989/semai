@@ -1,18 +1,3 @@
-import { createSlice } from '@reduxjs/toolkit'
-
-export const TransferPageSlice = createSlice({
-  name: 'transferPage',
-  initialState: {
-    tabIndex: 0,
-  },
-  reducers: {
-    setTabIndex: (state, action) => {
-      state.tabIndex = action.payload
-    }
-  },
-})
-
-// Action creators are generated for each case reducer function
-export const { setTabIndex } = TransferPageSlice.actions
-
-export default TransferPageSlice.reducer
+version https://git-lfs.github.com/spec/v1
+oid sha256:f31fa28c1314a9227f44e973caa43386c0c73f5b72938c41f2773f566619673d
+size 713
