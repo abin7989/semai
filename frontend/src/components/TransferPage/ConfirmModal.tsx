@@ -1,15 +1,3 @@
-import React from "react";
-import { TransferBoltImageObject } from "../../_utils/Types";
-
-function ConfirmModal({ selected }: {selected: TransferBoltImageObject[]}) {
-  return (
-    <div>
-
-
-
-      앙
-    </div>
-  );
-}
-
-export default ConfirmModal;
+version https://git-lfs.github.com/spec/v1
+oid sha256:1d5b05d81b7b104f125efcec1ac83bd368afed19d7ea78196a25d443b82ecee9
+size 644
