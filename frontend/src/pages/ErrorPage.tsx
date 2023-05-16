@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1089ddf7d84ba6c252fe452751c4364fc632b6e631722c94156d3b0e1f01f702
-size 383
+import React from "react";
+import { Link } from "react-router-dom";
+
+function ErrorPage() {
+  return (
+    <div style={{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
+      <h1>SOMETHING WENT WRONG!</h1>
+      <h3>다시 시도해보세요</h3>
+      <Link to="/">홈으로 이동하기</Link>
+    </div>
+  );
+}
+
+export default ErrorPage;
