@@ -1,15 +1,3 @@
-package com.ssafy.semes.report.model;
-
-import lombok.*;
-
-@Getter
-@Setter
-@Builder
-@ToString
-@AllArgsConstructor
-public class AnomalyWheelDTO {
-    String wheel_id;
-    int lost;
-    int loose;
-    int broken;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:67a3a61702844378484cb1a06ada1077e76298655b6e9fb5cbd06458ddd7e090
+size 211
