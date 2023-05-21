@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:30f13ec1937db50ec9d7fc024e316da84e9ed31c56fa6efbbc68a1e2fd56f901
-size 427
+import { createSlice } from '@reduxjs/toolkit'
+
+type TrainSliceType = {
+  isTraining: boolean,
+}
+
+const initialState: TrainSliceType = {
+  isTraining: false
+}
+
+export const trainSlice = createSlice({
+  name: 'train',
+  initialState,
+  reducers: {
+    setIsTraining: (state, action) => {
+      state.isTraining = action.payload;
+    }
+  }
+})
+
+export const { setIsTraining } = trainSlice.actions
+export default trainSlice.reducer
