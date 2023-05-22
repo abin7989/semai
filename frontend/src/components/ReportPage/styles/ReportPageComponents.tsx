@@ -1,20 +1,3 @@
-import styled from "styled-components";
-
-export const ReportSection = styled.section`
-  padding: 30px;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-`;
-export const ReportFormContainer = styled.div`
-  width: 100%;
-  transition: all 500ms ease;
-  overflow-x: auto;
-
-  &.open {
-    width: calc(100vw - 830px);
-    overflow-x: auto;
-  }
-`;
+version https://git-lfs.github.com/spec/v1
+oid sha256:4a78808706d1857bfd86da7fba177aed5175697182356de1f09d2410b761bba4
+size 790
