@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3f668d61f3e7ad2c85441333487e6e3b20b5f338b881bf03c070dee00fc0cc5d
-size 125
+path: datasets/final_train_0510
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 2
+names: 
+  0: inner
+  1: outer
