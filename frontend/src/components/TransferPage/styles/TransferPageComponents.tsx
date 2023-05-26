@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1b7b7a05d46423d49f7a5d922702e040e99883eeed6b4e0addeeee4628c98970
-size 280
+import styled from "styled-components";
+
+export const TransferSection = styled.section`
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+`
+
+export const TransferContainer = styled.div`
+  display: flex;
+  flex-shrink: 0;
+  flex-grow: 1;
+  height: 80%;
+`;
