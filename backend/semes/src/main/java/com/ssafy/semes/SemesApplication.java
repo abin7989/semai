@@ -1,13 +1,3 @@
-package com.ssafy.semes;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
-public class SemesApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(SemesApplication.class, args);
-	}
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3761539fb66125198da721266c69fef75cda01540ee0a35ba0054792e8998287
+size 684
