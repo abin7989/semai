@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6166a8ef9674048048293a20662930d993f33ec855dceb2611882e4bbaf03750
-size 219
+package com.ssafy.semes.image.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ssafy.semes.image.model.service.ImageService;
+
+@RestController
+@RequestMapping("/image")
+public class ImageController {
+	@Autowired
+	ImageService imageService;
+}

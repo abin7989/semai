@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:28e0939a7960cea8e59d34a641bdc9a0643e5607b546ba6ca79081fa5a967f10
-size 358
+import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
+import type { RootState, AppDispatch } from '../_store/store';
+
+// Use throughout your app instead of plain `useDispatch` and `useSelector`
+export const useAppDispatch = () => useDispatch<AppDispatch>();
+export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
