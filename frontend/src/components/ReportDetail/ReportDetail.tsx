@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2f17c66531ccda5cd08278e23dcdade36cced63f144f3094c390076af24051bf
-size 779
+import React from "react";
+
+import { useAppDispatch } from "../../_hooks/hooks";
+import { setDetailClose } from "../../_store/slices/reportDetailSlice";
+
+import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import DetailTable from "./DetailTable";
+import { CloseButton, ReportDetailContainer } from "./styles/ReportDetailComponents";
+
+function ReportDetail({className}: {className: string}) {
+  const dispatch = useAppDispatch();
+  return (
+    <ReportDetailContainer className={className}>
+      <CloseButton onClick={() => dispatch(setDetailClose())}>
+        <KeyboardDoubleArrowRightIcon sx={{ height: "35px", width: "35px" }} />
+      </CloseButton>
+      <DetailTable />
+    </ReportDetailContainer>
+  );
+}
+
+export default ReportDetail;

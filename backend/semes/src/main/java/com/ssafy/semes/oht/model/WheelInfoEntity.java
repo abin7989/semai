@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:636da733a41183b01bd21e7d1b321b4c7305306c78213749a7b7a8f66a51b8b7
-size 577
+package com.ssafy.semes.oht.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@Entity
+public class WheelInfoEntity {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "wheel_info_id", nullable = false)
+	private long wheelInfoId;
+
+	@Column(name="label", nullable = false)
+	private int label;
+
+	@Column(name="count", nullable = false)
+	private int count;
+
+}

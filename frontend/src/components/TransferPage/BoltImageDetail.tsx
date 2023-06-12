@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:45edb41abbf60b4306361d770730173900a8c9f553f6d09fe4fbc59037a896ad
-size 1145
+import React from 'react';
+import {
+  BoltImageDetailContainer,
+  BoltImageDetailImg,
+  BoltImageDetailWrapper
+} from "./styles/TabContentComponents";
+import {setIsDetailOpen} from "../../_store/slices/transferPageSlice";
+import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import ImageUrl from "../../_utils/ImageUrl";
+import {useAppDispatch, useAppSelector} from "../../_hooks/hooks";
+import { CloseButton } from "../ReportDetail/styles/ReportDetailComponents";
+
+function BoltImageDetail() {
+  const dispatch = useAppDispatch();
+  const { isDetailOpen, detailInfo } = useAppSelector(state => state.transferPage);
+  return (
+    <BoltImageDetailContainer className={isDetailOpen? "active" : ""}>
+      <CloseButton onClick={() => dispatch(setIsDetailOpen(false))}><KeyboardDoubleArrowRightIcon sx={{height: "35px", width: "35px"}} /></CloseButton>
+      <BoltImageDetailWrapper>
+        <BoltImageDetailImg src={ImageUrl(detailInfo.imgUrl)} alt="bolt detail"/>
+        <div>{detailInfo.originName}</div>
+      </BoltImageDetailWrapper>
+    </BoltImageDetailContainer>
+  );
+}
+
+export default BoltImageDetail;

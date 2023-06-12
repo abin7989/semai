@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d80079a70102c4ca117902d8fb655ef38d231c92802c4d4fd2b5f61cb05d4c8a
-size 631
+package com.ssafy.semes.transition.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Entity
+@Setter
+@Getter
+@ToString
+public class TransitionConfig {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="tc_id", nullable = false)
+	private Long tcId;
+
+	@Column(name = "accuracy")
+	private Double accuracy;
+
+	@Column(name = "loss")
+	private Double loss;
+
+	@Column(name = "fscore")
+	private Double fscore;
+
+}

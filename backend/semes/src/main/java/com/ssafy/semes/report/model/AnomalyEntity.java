@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e9656697eda344c1c80a40c76ac38801b1a792551cbd938ff311b67e04b29506
-size 1002
+package com.ssafy.semes.report.model;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
+
+@Entity
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+@IdClass(AnomalyEntityPK.class)
+public class AnomalyEntity {
+
+    @Id
+    @Column(name = "oht_sn", nullable = false)
+    private String ohtSn;
+
+    @Id
+    @Column(name = "wheel_position", nullable = false)
+    private String wheelPosition;
+
+    @Column(name="wheel_check_id", nullable = false)
+    private long wheelCheckId;
+    @Column(name="total_good_count", nullable = false)
+    private int totalGoodCount;
+    @Column(name="total_out_count", nullable = false)
+    private int totalOutCount ;
+    @Column(name="total_lose_count", nullable = false)
+    private int totalLoseCount ;
+    @Column(name="total_loose_count", nullable = false)
+    private int totalLooseCount ;
+    @Column(name="anomaly_flag", nullable = false)
+    private int anomalyFlag;
+
+}

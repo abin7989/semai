@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3761539fb66125198da721266c69fef75cda01540ee0a35ba0054792e8998287
-size 684
+package com.ssafy.semes;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+import org.springframework.scheduling.annotation.EnableAsync;
+
+import com.ssafy.semes.common.Directory;
+import com.ssafy.semes.util.FileUtil;
+
+@SpringBootApplication
+@EnableJpaAuditing
+@EnableAsync
+public class SemesApplication {
+	public static void main(String[] args) {
+		// 파일 저장 위한 폴더 초기화
+		FileUtil.init(Directory.BASE.getPath());
+		FileUtil.init(Directory.ARCHIVE.getPath());
+
+		SpringApplication.run(SemesApplication.class, args);
+	}
+}
