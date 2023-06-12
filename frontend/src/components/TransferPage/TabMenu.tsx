@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d323c5ed801d55ea26d6cfc4fe20f0e8fb35f95b812ef727469651fa3723dbf8
-size 979
+import React from 'react';
+
+import { useAppDispatch, useAppSelector } from "../../_hooks/hooks";
+import { setStatus, setIsDetailOpen } from "../../_store/slices/transferPageSlice";
+
+import { TabMenuLi, TransferMenuContainer, LengthSpan } from "./styles/TabMenuComponents";
+
+function TabMenu({imageLengthList}: { imageLengthList: number[] }) {
+
+  const dispatch = useAppDispatch();
+  const { status, statusNameList } = useAppSelector(state => state.transferPage);
+
+  return (
+    <TransferMenuContainer>
+      { statusNameList.map((statusName, idx) =>
+        <TabMenuLi
+          key={`transfer-tab-menu_${idx}`}
+          className={idx === status ? "isActive" : "" }
+          onClick={ () => {
+            dispatch(setStatus(idx));
+            dispatch(setIsDetailOpen(false));
+          }}
+        >
+          { statusNameList[idx] } <LengthSpan>{ imageLengthList[idx] }</LengthSpan>
+        </TabMenuLi>
+      ) }
+    </TransferMenuContainer>
+  );
+}
+
+export default TabMenu;

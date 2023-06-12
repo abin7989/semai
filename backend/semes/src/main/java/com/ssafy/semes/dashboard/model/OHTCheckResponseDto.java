@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:551198c5b242b5d2f8c6396eb262456837a24f6089cd8e4db093f28cb25ae26e
-size 557
+package com.ssafy.semes.dashboard.model;
+
+
+import com.ssafy.semes.oht.model.OHTEntity;
+import lombok.*;
+
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+
+@Getter
+@Setter
+@Builder
+@ToString
+@AllArgsConstructor
+public class OHTCheckResponseDto {
+    private long ohtCheckId;
+    private String ohtSn;
+    private LocalDateTime ohtCheckStartDatetime;
+    private LocalDateTime ohtCheckEndDatetime;
+    private int flCount;
+    private int frCount;
+    private int rlCount;
+    private int rrCount;
+    private long ohtId;
+
+}

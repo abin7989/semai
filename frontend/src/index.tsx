@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0c6ba952af38cd6ed42c795755d858b958ff976d7c22731edb1d9679d97718e3
-size 802
+import App from "./App";
+import { PersistGate } from "redux-persist/integration/react";
+import { Provider } from "react-redux";
+import React from "react";
+import { createRoot } from "react-dom/client";
+import { persistor } from "./_store/store"
+import reportWebVitals from "./reportWebVitals";
+import { store } from "./_store/store";
+
+const container = document.getElementById("root")!;
+const root = createRoot(container);
+
+root.render(
+  <Provider store={store}>
+    <PersistGate persistor={persistor} loading={null}>
+      <App />
+    </PersistGate>
+  </Provider>,
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();

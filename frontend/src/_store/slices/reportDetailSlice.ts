@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f7f7a6c55362b01621ee62f18738a24693d96eef14d7e5fa9bf49b497f6c9557
-size 1078
+import { createSlice } from '@reduxjs/toolkit'
+import { ReportDetailSliceType } from "../../_utils/Types";
+
+const initialState: ReportDetailSliceType= {
+  reportDetail: {
+    ohtSn: "",
+    boltGoodCount: 0,
+    boltOutCount: 0,
+    boltLoseCount: 0,
+    totalGoodCount: 0,
+    totalOutCount: 0,
+    totalLoseCount: 0,
+    totalLooseCount: 0,
+    wheelCheckDate: [0, 0, 0, 0, 0, 0],
+    wheelCheckId: 0,
+    wheelPosition: "",
+    markingUrl: "",
+    originUrl: ""
+  },
+  isDetailOpen: false,
+}
+
+export const reportDetail = createSlice({
+  name: 'reportDetail',
+  initialState,
+  reducers: {
+    setReportDetail: (state, action) => {
+      state.reportDetail = action.payload;
+    },
+    setDetailOpen: (state) => {
+      state.isDetailOpen = true;
+    },
+    setDetailClose: (state) => {
+      state.isDetailOpen = false;
+      state.reportDetail = initialState.reportDetail;
+    }
+  }
+})
+
+// Action creators are generated for each case reducer function
+export const { setReportDetail, setDetailOpen, setDetailClose } = reportDetail.actions
+
+export default reportDetail.reducer

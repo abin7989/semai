@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:773515b7db5924c3c2340cc1cdb869d5a8798db071e8d9e979b953813acd6801
-size 768
+import Axios from "./Axios";
+import { json } from "react-router-dom";
+
+export async function BoltImageListsLoader () {
+  let BoltImageLists = [];
+
+  let response = await Axios.get('transition');
+  console.log(response);
+  if (response.data.status === 404) {
+    throw json (response.data);
+  }
+  BoltImageLists = response.data.data;
+  console.log(BoltImageLists);
+  return BoltImageLists;
+}
+
+export async function ReportListsLoader ({request}: {request: any}) {
+  let ReportLists: string[] = [];
+  const url = new URL(request.url);
+  const search = url.search;
+
+  try {
+    let response = await Axios.get(`report/list${search}`);
+    ReportLists = response.data.data;
+    console.log(ReportLists);
+  }
+  catch (err) {
+    console.log(err)
+  }
+  return ReportLists;
+}
+

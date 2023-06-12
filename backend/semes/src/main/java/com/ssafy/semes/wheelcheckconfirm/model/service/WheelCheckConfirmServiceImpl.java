@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ea13f1aa5df213b5bacfb68059cd7f662552d0a3e9c7a029bebe1fad06cdeb79
-size 563
+package com.ssafy.semes.wheelcheckconfirm.model.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.ssafy.semes.wheelcheckconfirm.model.repository.WheelCheckConfirmRepository;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@Transactional
+@RequiredArgsConstructor
+public class WheelCheckConfirmServiceImpl implements WheelCheckConfirmService{
+	@Autowired
+	WheelCheckConfirmRepository wheelCheckConfirmRepository;
+
+}

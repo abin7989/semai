@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9e1467033daa20280eb4976be375fc5b8cf9c048a85d0433c2cc6869069582e3
-size 670
+import { createSlice } from '@reduxjs/toolkit'
+import {ReportPageSliceType} from "../../_utils/Types";
+
+const initialState: ReportPageSliceType = {
+  queryObj: {
+    ohtSn: "",
+    startDate: "",
+    endDate: "",
+    time: "",
+    wheelPosition: "",
+    page: "",
+    descFlag: "",
+    errorFlag: "",
+  },
+}
+
+export const reportPageSlice = createSlice({
+  name: 'reportPage',
+  initialState,
+  reducers: {
+    setQueryObj: (state, action) => {
+      Object.assign(state.queryObj, action.payload);
+    },
+  }
+})
+
+// Action creators are generated for each case reducer function
+export const { setQueryObj } = reportPageSlice.actions
+
+export default reportPageSlice.reducer
